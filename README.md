@@ -30,5 +30,13 @@ and add the following line to your .vimrc
 		vmap <sendSelectionPerChar>    y:call PyShellSendKey(substitute('<C-R>0',"\"","\\\"","")."\r")<CR>
 		vmap <seeObjectUnderCursor>    y:call PyShellSendKey(substitute('<C-R>0',"\"","\\\"","")."\r")<CR>
 
-Be creative, ellaborate on that, and create your own mappings!
+* Pandas dataframe specific mappings
+
+        map <showHead>                  :call PyShellSendKey("<C-R><C-W>.head()\r")
+        map <showColumns>               :call PyShellSendKey("<C-R><C-W>.columns\r")
+        map <dfDescribe>                :call PyShellSendKey("<C-R><C-W>.describe()\r")
+        map <dfDtypes>                  :call PyShellSendKey("<C-R><C-W>.dtypes\r")
+   
+
+Be creative, build-up on that, and create your own mappings!
 
