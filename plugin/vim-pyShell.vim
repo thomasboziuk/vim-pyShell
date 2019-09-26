@@ -1,4 +1,3 @@
-" Interact with spark shell quick and dirty
 let g:tmuxcnf   = '-f \"' . $HOME . "/.tmux.conf" . '\"'
 let g:inPasteMode = 0
 
@@ -22,7 +21,7 @@ function! StopPyShell()
   call VimuxRunCommand("exit")
 endfunction
 
-function! PyShellEnterPasteEnv()
+function! PyShellEnterPateEnv()
   if !g:inPasteMode && !g:pysparkMode
     let g:inPasteMode = 1
     call VimuxRunCommand(":paste\r")
