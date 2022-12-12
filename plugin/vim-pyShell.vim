@@ -12,7 +12,7 @@ function! WarningMsg(wmsg)
 endfunction
 
 function! StartPyShell()
-    call VimuxRunCommand("ipython")
+    call VimuxRunCommand("ipython3")
 endfunction
 
 
